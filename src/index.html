@@ -2,456 +2,50 @@
 <html lang="en" class="page">
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MET</title>
-    <link rel="icon" href="./images/favicon.png">
     <link rel="stylesheet" href="./styles/main.scss">
-    <script src="./scripts/main.js" defer></script>
+    <link rel="icon" href="./images/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;400;700&display=swap" rel="stylesheet">
+    <title>Richard</title>
   </head>
   <body class="page__body">
-    <header class="page__header page__section header">
-      <div class="container">
-        <div class="header__content">
-          <div class="user-actions">
-            <a href="/" 
-              class="user-actions__logo logo link">
-              The 
-              <br>
-              MET
-            </a>
-            
-            <div class="icons">
-              <a href="tel:+1 212-535-7710" class="icon icon--phone"></a>
-              <a href="#menu" class="icon icon--menu"></a>
-            </div>
-          </div>
-          <h1 class="header__title">
-            Welcome <br> 
-            to The MET
-          </h1>
-        </div>
-      </div>
-    </header>
-    <nav class="page__menu menu" id="menu">
-      <div class="container">
-        <div class="menu__content">
-          <div class="menu__actions user-actions">
-            <a href="/" 
-              class="user-actions__logo logo logo--menu link">
-              The 
-              <br>
-              MET
-            </a>
-            <div class="icons">
-              <a href="#" class="icon icon--cross"></a>
-            </div>
-          </div>
-          <ul class="menu__nav nav">
-            <li class="nav__item">
-              <a href="/" class="nav__link link">Home</a>
+    <div class="page__header header">
+      <div class="header__content">
+        <div class="header__top-actions top-actions">
+          <a href="#" class="top-actions__logo logo">
+            <img src="./images/logo.png" 
+                 alt="Logo" 
+                 class="logo__image">
+          </a>
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="#about" class="menu__item-link">About</a>
             </li>
-            <li class="nav__item">
-              <a href="#museum-hours" class="nav__link link">Museum Hours</a>
+            <li class="menu__item">
+              <a href="#features" class="menu__item-link">Features</a>
             </li>
-            <li class="nav__item">
-              <a href="#gallery" class="nav__link link">Now on view</a>
+            <li class="menu__item">
+              <a href="#how-to-use" class="menu__item-link">How to use</a>
             </li>
-            <li class="nav__item">
-              <a href="#testimonials" class="nav__link link">testimonials</a>
-            </li>
-            <li class="nav__item">
-              <a href="#contacts" class="nav__link link">Contacts</a>
+            <li class="menu__item">
+              <a href="#download" class="menu__item-link">Download</a>
             </li>
           </ul>
-          <div class="menu__phone-numbers">
-            <p class="menu__user-info user-info">
-              The Met Fifth Avenue
-              <br>
-              +1 212-535-7710
-            </p>
-            <p class="menu__user-info user-info">
-              The Met Cloisters
-              <br>
-              +1 212-923-3700
-            </p>
+        </div>
+        <div class="header-main-info">
+          <div class="header-main-info__user">
+            <h1 class="header-main-info__title">Momentum</h1>
+            <h2 class="header-main-info__subtitle">Launch your product — and savor the momentum.</h2>
+            <a href="#" class="button">
+               Get the App
+            </a>
           </div>
-          <a href="tel:+1 212-535-7710" class="menu__order link">call to order</a>
+          <img src="./images/header-image.svg" 
+               alt="Header image" 
+               class="header-main-info__image">
         </div>
       </div>
-    </nav>
-    <main>
-      <section class="page__section hours" id="museum-hours">
-        <div class="container">
-          <div class="grid">
-            <div class="grid__item grid__item--desktop-1-5 grid__item--1-3">
-              <div class="hours__info">
-                <h3 class="hours__subtitle">Plan your visit</h3>
-                <h2 class="hours__title page__section-title page__section-title--hours">Museum hours</h2>
-              </div>
-            </div>
-            <div class="grid__item grid__item--desktop-6-12 grid__item--4-6">
-              <div class="hours__paragraph paragraph">
-                <a href="https://goo.gl/maps/2Tt56DKiatc6gy129"
-                   target="_blank"
-                   class="paragraph__title
-                          page__link
-                          page__ordinary-text--hover
-                          ">The Met Fifth Avenue
-                </a>
-                <div class="paragraph__columns columns">
-                  <div class="columns__hours">
-                    <p class="columns__hours-item page__ordinary-text--bold">10 am - 5 pm</p>
-                    <p class="columns__hours-item page__ordinary-text--bold">10 am - 9 pm</p>
-                    <p class="columns__hours-item page__ordinary-text--bold">Closed</p>
-                  </div>
-                  <div class="columns__days">
-                    <p class="columns__days-item page__ordinary-text">Sun, Mon, Tue, Thu</p>
-                    <p class="columns__days-item page__ordinary-text">Fri, Sat</p>
-                    <p class="columns__days-item page__ordinary-text">Wen</p>
-                  </div>
-                </div>
-                <h3 class="page__ordinary-text--bold">Closed on</h3>
-                <p class="page__ordinary-text">Thanksgiving Day, Dec 25, Jan 1, and the first Monday in May.</p>
-              </div>
-              <div class="hours__paragraph paragraph">
-                <a href="https://goo.gl/maps/2Tt56DKiatc6gy129"
-                   target="_blank"
-                   class="paragraph__title
-                          page__link
-                          page__ordinary-text--hover
-                          ">The Met Cloisters
-                </a>
-                <div class="paragraph__columns columns">
-                  <div class="columns__hours">
-                    <p class="columns__hours-item page__ordinary-text--bold">10 am – 4.30 pm</p>
-                    <p class="columns__hours-item page__ordinary-text--bold">Closed</p>
-                  </div>
-                  <div class="columns__days">
-                    <p class="columns__days-item page__ordinary-text">Thu - Tue</p>
-                    <p class="columns__days-item page__ordinary-text">Wen</p>
-                  </div>
-                </div>
-                <h3 class="page__ordinary-text--bold">Closed on</h3>
-                <p class="page__ordinary-text">Thanksgiving Day, Dec 25, Jan 1</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="page__section gallery" id="gallery">
-        <div class="container">
-          <h2 class="gallery__title page__section-title">Now On View</h2>
-          <h3 class="gallery__subtitle page__ordinary-text--center">
-            Explore exhibition gallery guides, 
-            <br>
-            videos, articles, and more.
-          </h3>
-
-          <div class="gallery__place place">
-            <div class="place__photos">
-              <div class="grid grid--small-screen">
-                <div class="grid__item
-                            grid__item--desktop-1-8
-                            grid__item--mobile-1-4">
-                  <div class="place__photo-container">
-                    <img src="./images/photos/1.jpg" alt="Place 1" class="place__image">
-                  </div>
-                </div>
-                <div class="grid__item 
-                            grid__item--desktop-9-12
-                            grid__item--mobile-5-6">
-                  <div class="place__photo-container">
-                    <img src="./images/photos/2.jpg" alt="Place 1" class="place__image">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="place__description">
-              <h4 class="page__ordinary-text--red">
-                A New Look at Old Masters
-              </h4>
-              <p class="page__ordinary-text">
-                December 12, 2020 – Through Spring 2023
-              </p>
-            </div>
-          </div>
-
-          <div class="gallery__place place">
-            <div class="place__photos">
-              <div class="grid grid--second-row">
-                <div class="grid__item
-                            grid__item--desktop-1-4 
-                            grid__item--mobile-1-3
-                            ">
-                  <div class="place__photo-container place__photo-container--second-row">
-                    <img src="./images/photos/3.jpg" alt="Place 2" class="place__image">
-                  </div>
-                </div>
-                <div class="grid__item 
-                            grid__item--desktop-5-8
-                            grid__item--mobile-4-6
-                            ">
-                  <div class="place__photo-container place__photo-container--second-row">
-                    <img src="./images/photos/4.jpg" alt="Place 2" class="place__image">
-                  </div>
-                </div>
-
-                <div class="grid__item
-                            grid__item--desktop-9-12
-                            grid__item--hidden-photo">
-                  <div class="place__photo-container place__photo-container--second-row">
-                    <img src="./images/photos/5.png" alt="Place 2" class="place__image">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="place__description">
-              <h4 class="page__ordinary-text--red">
-                Bodhisattvas of Wisdom, Compassion, and Power
-              </h4>
-              <p class="page__ordinary-text">
-                March 27, 2021 – October 30, 2022
-              </p>
-            </div>
-          </div>
-
-          <div class="gallery__place place">
-            <div class="place__photos">
-              <div class="grid grid--small-screen">
-                <div class="grid__item 
-                            grid__item--desktop-1-4 
-                            grid__item--mobile-1-2
-                            ">
-                  <div class="place__photo-container">
-                    <img src="./images/photos/6.jpg" alt="Place 3" class="place__image">
-                  </div>
-                </div>
-                <div class="grid__item 
-                            grid__item--desktop-5-12 
-                            grid__item--mobile-3-6
-                            ">
-                  <div class="place__photo-container">
-                    <img src="./images/photos/7.jpg" alt="Place 3" class="place__image place__image--right">
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="place__description">
-              <h4 class="page__ordinary-text--red">
-                Inspiring Walt Disney: The Animation of French Decorative Arts
-              </h4>
-              <p class="page__ordinary-text">
-                December 10, 2021 – March 6, 2022
-              </p>
-            </div>
-          </div>
-          <div class="grid">
-            <div class="grid__item
-                        grid__item--desktop-5-8
-                        grid__item--mobile-2-5">
-              <a href="#" class="button">
-                View all exhibitions
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="page__section testimonials" id="testimonials">
-        <div class="container">
-          <h2 class="testimonials__title page__section-title">
-            More to Explore <br>
-            Online
-          </h2>
-          <div class="grid grid--mobile-testimonials">
-            <div class="grid__item
-                        grid__item--desktop-1-4
-                      ">
-              <div class="testimonials__card test-card">
-                <div class="test-card__photo">
-                  <img src="./images/photos/test_1.png" alt="Test 1" class="test-card__image">
-                </div>
-                <div class="test-card__description">
-                  <div class="test-card__description-title">
-                    Collection Areas
-                  </div>
-                  <div class="test-card__description-text">
-                    These collection areas study, exhibit, and 
-                    care for the objects in The Met collection.
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="grid__item
-                        grid__item--desktop-5-8
-                      ">
-              <div class="testimonials__card test-card">
-                <div class="test-card__photo">
-                  <img src="./images/photos/test_2.png" alt="Test 2" class="test-card__image">
-                </div>
-                <div class="test-card__description">
-                  <div class="test-card__description-title">
-                    Travel
-                  </div>
-                  <div class="test-card__description-text">
-                    Travel with The Met connects the Museum's 
-                    wide and diverse audience to art, inspiration,
-                    and historical perspective.
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="grid__item grid__item--desktop-9-12">
-              <div class="testimonials__card testimonials__card--last-child test-card">
-                <div class="test-card__photo">
-                  <img src="./images/photos/test_3.png" alt="Test 3" class="test-card__image">
-                </div>
-                <div class="test-card__description">
-                  <div class="test-card__description-title">
-                    Virtual group tours
-                  </div>
-                  <div class="test-card__description-text">
-                    Travel with The Met connects the Museum's 
-                    wide and diverse audience to art, inspiration, 
-                    and historical perspective.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="page__section contacts" id="contacts">
-        <div class="container">
-          <h2 class="page__section-title contacts__title">
-            Contact us
-          </h2>
-          <div class="grid">
-            <div class="grid__item
-                        grid__item--desktop-1-7
-                        grid__item--mobile-1-3
-                      ">
-              <div class="contacts__columns">
-                <div class="contacts__paragraph-column">
-                  <h3 class="contacts__paragraph-title
-                             page__ordinary-text--bold
-                           ">
-                    The Met Fifth Avenue
-                  </h3>
-                  <div class="contacts__paragraph-subtitle
-                              page__ordinary-text
-                            ">
-                    Phone
-                  </div>
-                  <a href="tel:+1 212-535-7710"
-                     class="contacts__paragraph-info
-                            page__link
-                            page__ordinary-text--bold
-                            page__ordinary-text--hover
-                           ">
-                    +1 212-535-7710
-                  </a>
-                  <div class="contacts__paragraph-subtitle
-                              page__ordinary-text
-                            ">
-                    Adress
-                  </div>
-                  <a href="https://goo.gl/maps/2Tt56DKiatc6gy129"
-                       target="_blank"
-                       class="contacts__paragraph-info
-                              page__link
-                              page__ordinary-text--bold
-                              page__ordinary-text--hover
-                            ">
-                    1000 Fifth Avenue <br>
-                    New York, NY 10028
-                  </a>
-                </div>
-
-                <div class="contacts__paragraph-column">
-                  <h4 class="contacts__paragraph-title
-                               page__ordinary-text--bold
-                              ">
-                    The Met Cloisters
-                  </h4>
-                  <div class="contacts__paragraph-subtitle
-                              page__ordinary-text
-                              ">
-                    Phone
-                  </div>
-                  <a href="tel:+1 212-535-7710" 
-                      class="contacts__paragraph-info
-                            page__link
-                            page__ordinary-text--bold
-                            page__ordinary-text--hover
-                          ">
-                    +1 212-535-7710
-                  </a>
-                  <div class="contacts__paragraph-subtitle
-                              page__ordinary-text
-                              ">
-                    Adress
-                  </div>
-                  <a href="https://goo.gl/maps/ZHLDc3ufngdaAzeL6"
-                      target="_blank"
-                      class="contacts__paragraph-info
-                            page__link
-                            page__ordinary-text--bold
-                            page__ordinary-text--hover
-                            ">
-                    99 Margaret Corbin Drive <br>
-                    Fort Tryon Park <br>
-                    New York, NY 10040
-                  </a>
-                </div>
-              </div>
-            </div> 
-            <div class="grid__item
-                        grid__item--desktop-8-12
-                        grid__item--mobile-4-6
-                      ">
-              <form action="/">
-                <label for="name">
-                  <input name="name"
-                        id="name"
-                        type="text"
-                        class="contacts__field form-field"
-                        placeholder="Name"
-                        required
-                  >
-                </label>
-                <label for="email">
-                  <input name="email"
-                        id="email" 
-                        type="email"
-                        class="contacts__field form-field"
-                        placeholder="Email"
-                        required
-                  >
-                </label>  
-                
-                <textarea 
-                  name="message"
-                  class="
-                    contacts__field 
-                    contacts__field--last
-                    form-field 
-                    form-field--textarea"
-                  placeholder="Message"
-                ></textarea>
-
-                <a href="#" class="button">Send</a>
-              </form>
-            </div> 
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-    </footer>
+    </div>
   </body>
 </html>

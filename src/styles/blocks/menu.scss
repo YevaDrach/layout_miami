@@ -1,39 +1,32 @@
 .menu {
-  height: 100vh;
-  background-color: $color-red;
-
-  &__content {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    padding: $header-top-padding 0 0;
+  display: flex;
+  
+  &__item {
+    list-style: none;
   }
 
-  &__actions {
-    margin-bottom: 40px;
+  &__item:not(:last-child) {
+    margin-right: 30px;
+
+    @include onSmallScreen {
+      margin-right: 15px;
+    }
   }
 
-  &__nav {
-    padding: 0;
-  }
+  &__item-link {
+    color: #fff;
+    padding: 20px 0;
+    line-height: 20px;
+    font-weight: 400;
+    white-space: nowrap;
+    text-decoration: none;
 
-  &__phone-numbers {
-    margin: 0;
-    margin-bottom: 16px;
-  }
+    @include onMobile {
+      font-size: 20px;
+    }
 
-  &__user-info {
-    margin: 0;
-    margin-bottom: 8px;
-  }
-
-  &__order {
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 16px;
-    letter-spacing: 2px;
-    border-bottom: 1px solid #fff;
-    width: max-content;
-    padding: 0 0 8px;
+    @include onSmallScreen {
+      font-size: 15px;
+    }
   }
 }
